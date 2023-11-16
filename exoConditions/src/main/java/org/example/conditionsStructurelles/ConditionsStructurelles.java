@@ -90,7 +90,7 @@ public class ConditionsStructurelles {
         userNum = scanner.nextInt();
 
         for (int i = 1; i <= userNum; i++) {
-            sum += i;
+            sum = sum + i;
         }
         System.out.println("La somme des entiers jusqu'à " + userNum + " est : " + sum);
         scanner.close();
@@ -111,7 +111,7 @@ public class ConditionsStructurelles {
             }
         }
         System.out.println("Le plus grand de ces nombres est : " + maxNum);
-        System.out.println("Il a été entré en " + maxNumPosition + "ème position.45");
+        System.out.println("Il a été entré en " + maxNumPosition + "ème position.");
         scanner.close();
     }
 
