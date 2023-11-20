@@ -136,9 +136,6 @@ public class ExoTableau {
 
         for (int i = 0; i < arraySize; i++){
             array[i] = randomNum.nextInt(100) + 1;
-        }
-
-        for (int i = 1; i < arraySize; i++){
             if (array[i] > maxNum) {
                 maxNum = array[i];
             }
