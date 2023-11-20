@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class ExoTableau2 {
 
-    public static Scanner scanner = new Scanner (System.in);
     public static int getOccurrences(int[] array, int searchedValue) {
         int occurrences = 0;
 
@@ -29,7 +28,6 @@ public class ExoTableau2 {
 
         System.out.println("Elements dans le tableau: " + Arrays.toString(array));
         System.out.println("Le nombre " + searchedValue+ " est présent " + occurrences + " fois dans le tableau.");
-        scanner.close();
     }
 
         int[] array = {2, 8, 20, 5, 99, 45, 76, 17, 25, 85};
@@ -88,5 +86,6 @@ public class ExoTableau2 {
         myArray[0] = temp;
         System.out.println(Arrays.toString(myArray));
     }
+
 
 }
