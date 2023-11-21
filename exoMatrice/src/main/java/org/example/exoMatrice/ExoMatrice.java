@@ -49,10 +49,10 @@ public class ExoMatrice {
 
         String[][] matrix = new String[4][5] ;
 
-        matrix[0][0] = " / ";
-        matrix[0][1] = "Giuseppe";
+        matrix[0][0] = " ";
+        matrix[0][1] = "Mateo";
         matrix[0][2] = "Andrea";
-        matrix[0][3] = "Leonardo";
+        matrix[0][3] = "Leo";
         matrix[0][4] = "Marco";
 
         matrix[1][0] = "Fiat";
@@ -67,7 +67,7 @@ public class ExoMatrice {
         }
 
         // Print the matrix
-        System.out.println("Matrix of cars sold by sellers for each car brand:");
+        System.out.println("Les véhicules vendus par les vendeurs:");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.print(matrix[i][j] + "\t");
