@@ -44,8 +44,6 @@ public class ExoMatrice {
     }
 
     public static void getMacchinaSales() {
-        String brand;
-        String seller;
 
         String[][] matrix = new String[4][5] ;
 
@@ -61,13 +59,13 @@ public class ExoMatrice {
 
         for (int i = 1; i < matrix.length; i++) {
             for (int j = 1; j < matrix[i].length; j++) {
-                System.out.printf("Entrer le nombre de voiture vendu par %s pour la marque %s: ", matrix[0][j], matrix[i][0]);
+                System.out.printf("Entrer le nombre de voitures vendues par %s pour la marque %s: ", matrix[0][j], matrix[i][0]);
                 matrix[i][j] = Integer.toString(scanner.nextInt());
             }
         }
 
         // Print the matrix
-        System.out.println("Les véhicules vendus par les vendeurs:");
+        System.out.println("Les voitures vendues par vendeurs:");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.print(matrix[i][j] + "\t");
