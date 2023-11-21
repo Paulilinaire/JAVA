@@ -73,13 +73,15 @@ public class ExoFunction {
             System.out.println("Saisir du texte: ");
             String text = scanner.next();
 
+            // Split the sentence into words // Trim is important because delete useless spaces
+            String[] words = text.trim().split(" ");
+
+            // Count the number of words
+            int wordCount = words.length;
+            System.out.println("Nombre de mots :  " + wordCount);
+
         }
 
-        public static int getWordsAmount (String text) {
-            int wordsCounter = ;
-
-
-        }
 
 
 }

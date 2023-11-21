@@ -5,7 +5,7 @@ import org.example.exoFunction.ExoFunction;
 
 public class Main {
     public static void main(String[] args) {
-    ExoFunction.exercice2();
+    ExoFunction.exercice3();
 
     }
 }
