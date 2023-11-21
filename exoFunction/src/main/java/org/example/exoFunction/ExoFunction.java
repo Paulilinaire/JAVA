@@ -52,7 +52,7 @@ public class ExoFunction {
             scanner.close();
         }
 
-        public static void drawRectangle(int height, int width) {
+        public static void drawRectangle(int height, int width) { // function without return so it is called "procedure"
             // Draw lines of the rectangle
             for (int i = 0; i < width; i++) {
                 // Draw columns of the rectangle
