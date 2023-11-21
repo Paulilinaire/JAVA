@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.arrayMatrix.ArrayMatrix;
 import org.example.operator.Operator;
 import org.example.readFromConsole.ReadFromConsole;
 
@@ -18,6 +19,7 @@ public class Main {
 //        Structure.getSwitch();
 //        ReadFromConsole.getReadWrite();
 //        Structure2.getWhile();
-        ChaineDeCaractere.getFormatString();
+//        ChaineDeCaractere.getFormatString();
+        ArrayMatrix.getMatrix2();
         }
     }

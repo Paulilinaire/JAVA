@@ -12,7 +12,6 @@ public class ExoTableau {
             int[] array = {1,2,3,4,5};
 
             System.out.println("La valeur de la troisième case du tableau est : " + array[2]);
-            scanner.close();
         }
 
     public static void exercice2() {
@@ -26,7 +25,6 @@ public class ExoTableau {
         for (int i = 0; i < array.length; i++){
             System.out.println("Element à l'indice " + i + " : n°" + array[i] );
         }
-        scanner.close();
     }
 
     public static void exercice3() {
@@ -90,7 +88,6 @@ public class ExoTableau {
         for (int i = 0; i < arraySize; i++){
             System.out.println("Element à l'indice " + i + ": n°" + array[i]);
         }
-        scanner.close();
     }
 
     public static void exercice6() {
@@ -125,7 +122,6 @@ public class ExoTableau {
             sumArray[i] = array1[i] + array2[i];
             System.out.println("Element à l'indice " + i + ": " + sumArray[i]);
         }
-        scanner.close();
     }
 
     public static void exercice7() {
@@ -144,7 +140,6 @@ public class ExoTableau {
         //Arrays.toString is mandatory to display an array (java method)
 
         System.out.println("Le nombre maximum présent dans le tableau est: " + maxNum);
-    scanner.close();
     }
 }
 
