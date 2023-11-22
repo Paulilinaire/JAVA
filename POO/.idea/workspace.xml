@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="572d2b46-e9a5-45b6-ad6b-e90a65bece07" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/org/example/arrayMatrix/ArrayMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/org/example/function/Function.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/org/example/model/Maison.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/org/example/operator/Operator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/org/example/readFromConsole/ReadFromConsole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/org/example/string/ChaineDeCaractere.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/org/example/structure/Structure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/org/example/structure/Structure2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/org/example/variable/Variable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/src/main/java/org/example/array/Array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/src/main/java/org/example/conditions/Conditions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/src/main/java/org/example/conditionsStructurelles/ConditionsStructurelles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoConditions/énoncé_conditions_structurelles.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoFunction/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoFunction/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoFunction/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoFunction/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoFunction/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoFunction/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoFunction/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoFunction/src/main/java/org/example/exoFunction/ExoFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoMatrice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoMatrice/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoMatrice/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoMatrice/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoMatrice/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoMatrice/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoMatrice/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoMatrice/src/main/java/org/example/exoMatrice/ExoMatrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoString/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoString/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoString/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoString/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoString/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoString/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoString/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoString/src/main/java/org/example/exoString/ExoString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/src/main/java/org/example/exoTableau/ExoTableau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/src/main/java/org/example/exoTableau2/ExoTableau2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/src/main/java/org/example/exoTableau3/ExoTableau3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/énoncé1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/énoncé2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoTableau/énoncé3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/enoncé_variables_conditions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/src/main/java/org/example/exo2/Exo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/src/main/java/org/example/exos3/Exo3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exoVariables/énoncé_variables_conditions1.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2YX8878c3dJy3Tp0qdxTHtkGOyP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="572d2b46-e9a5-45b6-ad6b-e90a65bece07" name="Changes" comment="" />
+      <created>1700660404027</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700660404027</updated>
+      <workItem from="1700660405846" duration="51000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

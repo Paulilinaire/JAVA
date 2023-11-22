@@ -71,17 +71,19 @@ public class ExoFunction {
             System.out.println("Saisir du texte: ");
             String text = scanner.nextLine();
 
+
             // Split the sentence into words // Trim is important because delete useless spaces
             String[] words = text.trim().split("\\s+");
 
             // Count the number of words
             int wordCount = words.length;
-            System.out.println("Nombre de mots :  " + wordCount);
+            System.out.printf("Nombre de mots : %d. ", wordCount);
             scanner.close();
         }
 
+
         public static void exercice4() {
-            System.out.print("Saisissez des mots aléatoires : ");
+            System.out.print("Saisissez des mots aléatoires (séparés par des espaces): ");
             String userInput = scanner.nextLine();
 
             System.out.print("Saisissez la longueur minimale des mots que vous souhaitez filtrer : ");
