@@ -1,8 +1,6 @@
 package org.example.exoFunction;
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class ExoFunction {
     public static Scanner scanner = new Scanner (System.in);
@@ -71,18 +69,47 @@ public class ExoFunction {
 
         public static void exercice3() {
             System.out.println("Saisir du texte: ");
-            String text = scanner.next();
+            String text = scanner.nextLine();
 
             // Split the sentence into words // Trim is important because delete useless spaces
-            String[] words = text.trim().split(" ");
+            String[] words = text.trim().split("\\s+");
 
             // Count the number of words
             int wordCount = words.length;
             System.out.println("Nombre de mots :  " + wordCount);
-
+            scanner.close();
         }
 
+        public static void exercice4() {
+            System.out.print("Saisissez des mots aléatoires : ");
+            String userInput = scanner.nextLine();
 
+            System.out.print("Saisissez la longueur minimale des mots que vous souhaitez filtrer : ");
+            int minLength = scanner.nextInt();
+
+            String[] words = userInput.split("\\s+");
+
+            String[] filteredWords = filterWordsByLength(minLength, words);
+
+            System.out.println("Voici les mots filtrés: ");
+            for (String word : filteredWords) {
+                System.out.println(word);
+            }
+            scanner.close();
+        }
+        public static String[] filterWordsByLength(int minLength, String[] words) {
+            List<String> filteredList = new ArrayList<>();
+
+            for (String word : words) {
+                if (word.length() >= minLength) {
+                    filteredList.add(word);
+                }
+            }
+
+            // Convert the ArrayList to an array
+            return filteredList.toArray(new String[0]);
+
+        }
 
 }
 
