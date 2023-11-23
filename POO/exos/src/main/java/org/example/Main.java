@@ -30,10 +30,13 @@ public class Main {
         teacher.Explain();
 
         // TP Classe Héritage 2
+        Door door = new Door();
         Apartment apartment = new Apartment();
         People people = new People("Thomas");
         people.setHouse(apartment);
         people.display();
+        door.setColor("bleu");
+        door.display();
 
         // TP Classe Héritage 3
 

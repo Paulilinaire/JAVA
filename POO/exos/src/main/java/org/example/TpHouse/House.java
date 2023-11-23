@@ -1,11 +1,11 @@
 package org.example.TpHouse;
 public class House {
     protected long surface;
-    private Door door;
+    protected Door door;
 
     public House(long surface) {
         this.surface = surface;
-        this.door = new Door("blue"); // Default color is blue
+        this.door = new Door();
     }
 
     public long getSurface() {
@@ -18,6 +18,10 @@ public class House {
 
     public Door getDoor() {
         return door;
+    }
+
+    public void setDoor(Door door) {
+        this.door = door;
     }
 
     public void display() {

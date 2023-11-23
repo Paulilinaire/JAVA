@@ -1,9 +1,8 @@
 package org.example.TpHouse;
 public class Door {
-    private String color;
+    protected String color;
 
-    public Door(String color) {
-        this.color = color;
+    public Door() {
     }
 
     public String getColor() {
