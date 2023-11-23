@@ -40,6 +40,7 @@ public class Chair {
 
     @Override
     public String toString() {
+        System.out.println("----------- Affichage d'un nouvel objet ----------- ");
         return "Je suis une chaise, avec " + chairLeg + " pieds en " + materials + " et de couleur " + color;
     }
 }

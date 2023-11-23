@@ -12,13 +12,10 @@ public class Main {
 
     public static void main(String[] args) {
         // TP Classe Chaise
-        System.out.println("----------- Affichage d'un nouvel objet ----------- ");
         Chair blueChair = new Chair(4, "bleu", "bois");
         System.out.println(blueChair);
-        System.out.println("----------- Affichage d'un nouvel objet ----------- ");
         Chair whiteChair = new Chair(4, "blanche", "métal");
         System.out.println(whiteChair);
-        System.out.println("----------- Affichage d'un nouvel objet ----------- ");
         Chair transparentChair = new Chair(1, "transparente", "pléxiglass");
         System.out.println(transparentChair);
 
@@ -32,13 +29,13 @@ public class Main {
         System.out.println("Hello");
         teacher.Explain();
 
-        // TP Classe Héritage 1
+        // TP Classe Héritage 2
         Apartment apartment = new Apartment();
-
         People people = new People("Thomas");
         people.setHouse(apartment);
-
         people.display();
+
+        // TP Classe Héritage 3
 
     }
 }
