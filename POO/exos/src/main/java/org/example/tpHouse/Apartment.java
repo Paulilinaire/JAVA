@@ -1,4 +1,4 @@
-package org.example.TpHouse;
+package org.example.tpHouse;
 
 public class Apartment extends House {
     public Apartment() {

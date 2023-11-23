@@ -1,10 +1,13 @@
-package org.example.TpHouse;
-public class People {
-    private String name;
-    private House house;
+package org.example.tpHouse;
 
-    public People(String name) {
+public class Person {
+    String name;
+
+    public House house;
+
+    public Person(String name, House house) {
         this.name = name;
+        this.house = house;
     }
 
     public String getName() {
@@ -23,8 +26,8 @@ public class People {
         this.house = house;
     }
 
-    public void display() {
-        System.out.println("Nom de la personne : " + name);
+    public void display(){
+        System.out.println("Je m'appelle " + name + ".");
         System.out.println("Données de la maison : ");
         house.display();
     }

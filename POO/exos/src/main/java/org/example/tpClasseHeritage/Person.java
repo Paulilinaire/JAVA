@@ -1,4 +1,4 @@
-package org.example.TpClasseHeritage;
+package org.example.tpClasseHeritage;
 
 public class Person {
     protected int age;

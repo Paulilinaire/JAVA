@@ -1,14 +1,14 @@
-package org.example.TpHouse;
+package org.example.tpHouse;
 public class House {
-    protected long surface;
+    protected float surface;
     protected Door door;
 
-    public House(long surface) {
+    public House(float surface) {
         this.surface = surface;
-        this.door = new Door();
+        this.door = new Door("bleu");
     }
 
-    public long getSurface() {
+    public float getSurface() {
         return surface;
     }
 

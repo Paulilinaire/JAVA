@@ -1,12 +1,11 @@
 package org.example;
 
-import org.example.TpClasseChaise.Chair;
-import org.example.TpClasseHeritage.Person;
-import org.example.TpClasseHeritage.Student;
-import org.example.TpClasseHeritage.Teacher;
-import org.example.TpHouse.Apartment;
-import org.example.TpHouse.Door;
-import org.example.TpHouse.People;
+import org.example.tpClasseChaise.Chair;
+import org.example.tpClasseHeritage.Person;
+import org.example.tpClasseHeritage.Student;
+import org.example.tpClasseHeritage.Teacher;
+import org.example.tpHouse.Apartment;
+import org.example.tpHouse.People;
 
 public class Main {
 
@@ -16,8 +15,8 @@ public class Main {
         System.out.println(blueChair);
         Chair whiteChair = new Chair(4, "blanche", "métal");
         System.out.println(whiteChair);
-        Chair transparentChair = new Chair(1, "transparente", "pléxiglass");
-        System.out.println(transparentChair);
+        Chair noChair = new Chair(1, "transparente", "pléxiglass");
+        System.out.println(noChair);
 
         // TP Classe Héritage 1
         Person person = new Person(15);
@@ -30,13 +29,9 @@ public class Main {
         teacher.Explain();
 
         // TP Classe Héritage 2
-        Door door = new Door();
         Apartment apartment = new Apartment();
-        People people = new People("Thomas");
-        people.setHouse(apartment);
+        People people = new People("Thomas", apartment);
         people.display();
-        door.setColor("bleu");
-        door.display();
 
         // TP Classe Héritage 3
 

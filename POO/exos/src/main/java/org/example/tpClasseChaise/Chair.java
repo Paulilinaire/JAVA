@@ -1,4 +1,4 @@
-package org.example.TpClasseChaise;
+package org.example.tpClasseChaise;
 
 public class Chair {
     public int chairLeg;

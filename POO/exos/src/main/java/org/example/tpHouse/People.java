@@ -1,11 +1,10 @@
-package org.example.TpHouse;
+package org.example.tpHouse;
+public class People {
+    protected String name;
+    protected House house;
 
-public class Person {
-    String name;
+    public People(String name, House house) {
 
-    public House house;
-
-    public Person(String name, House house) {
         this.name = name;
         this.house = house;
     }
@@ -26,9 +25,10 @@ public class Person {
         this.house = house;
     }
 
-    public void display(){
-        System.out.println("Je m'appelle " + name + ".");
+    public void display() {
+        System.out.println("Nom de la personne : " + name);
         System.out.println("Données de la maison : ");
         house.display();
+        house.door.display();
     }
 }
