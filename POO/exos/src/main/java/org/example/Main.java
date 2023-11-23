@@ -21,12 +21,12 @@ public class Main {
 
         // TP Classe Héritage 1
         Person person = new Person(15);
-        System.out.println("Hello");
+        person.sayHello();
         Student student = new Student(20);
         student.goingToClass();
         System.out.println(student);
         Teacher teacher = new Teacher(99);
-        System.out.println("Hello");
+        teacher.sayHello();
         teacher.Explain();
 
         // TP Classe Héritage 2

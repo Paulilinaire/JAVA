@@ -15,6 +15,10 @@ public class Person {
         this.age = age;
     }
 
+    public void sayHello(){
+        System.out.println("Hello");
+    }
+
     @Override
     public String toString() {
         return "My age is " + age + " years old.";

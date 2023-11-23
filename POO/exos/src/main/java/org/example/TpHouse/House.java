@@ -1,6 +1,6 @@
 package org.example.TpHouse;
 public class House {
-    private long surface;
+    protected long surface;
     private Door door;
 
     public House(long surface) {
