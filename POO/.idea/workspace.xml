@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572d2b46-e9a5-45b6-ad6b-e90a65bece07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Enum/demo/src/main/java/org/example/enums/Priority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Enum/demo/src/main/java/org/example/exos/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpBankAccount/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpBankAccount/SimpleAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/org/example/dataStructure/ElectricCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/org/example/dataStructure/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/org/example/dataStructure/MotorCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/org/example/dataStructure/PetrolCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/org/example/dataStructure/SuperCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/src/main/java/org/example/dataStructure/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/TpClasseChaise/Chair.java" beforeDir="false" afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpClasseChaise/Chair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/TpClasseHeritage/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpClasseHeritage/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/TpClasseHeritage/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpClasseHeritage/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/TpClasseHeritage/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpClasseHeritage/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/TpHouse/Apartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpHouse/Apartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/TpHouse/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpHouse/Door.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/TpHouse/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpHouse/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/TpHouse/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpHouse/People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/TpHouse/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/exos/src/main/java/org/example/tpHouse/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/bankAccount/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exos/src/main/java/org/example/bankAccount/SimpleAccount.java" beforeDir="false" />
-    </list>
+    <list default="true" id="572d2b46-e9a5-45b6-ad6b-e90a65bece07" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

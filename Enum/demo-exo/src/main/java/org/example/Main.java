@@ -33,7 +33,7 @@ public class Main {
 //            System.out.println("enum : "+ p);
 //        }
 
-        //ex
+        //exo
 
         MessageType messageType;
         do {
