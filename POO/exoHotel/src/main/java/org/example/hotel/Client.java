@@ -7,7 +7,7 @@ public class Client {
     private String phoneNumber;
 
     public static int counter = 0;
-    public Client(int id, String lastName, String firstName, String phoneNumber) {
+    public Client(String lastName, String firstName, String phoneNumber) {
         this.id = counter++;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -45,6 +45,8 @@ public class Client {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+
 
     @Override
     public String toString() {

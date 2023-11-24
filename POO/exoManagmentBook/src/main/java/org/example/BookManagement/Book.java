@@ -101,16 +101,15 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", author=" + Arrays.toString(author) +
-                ", publisher=" + publisher +
-                ", publishingYear=" + publishingYear +
-                ", amountOfPages=" + amountOfPages +
-                ", price=" + price +
-                ", coverType=" + coverType +
-                '}';
+        return "Livre n° " + id +
+                ", nom: " + name + '\'' +
+                ", auteur : " + Arrays.toString(author) +
+                ", éditeur : " + publisher +
+                ", année d'édition : " + publishingYear +
+                ", " + amountOfPages + " pages, "
+                + price + "€," +
+                " type de livre : " + coverType
+                ;
     }
 }
 

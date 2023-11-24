@@ -3,7 +3,7 @@ package org.example.hotel;
 import java.util.Scanner;
 
 public class IHM {
-    private final Scanner scanner;
+    private Scanner scanner;
 
     public IHM() {
         this.scanner = new Scanner(System.in);
@@ -14,15 +14,14 @@ public class IHM {
     }
 
     public String getUserInput() {
-        System.out.print("Enter a value: ");
+        System.out.print("Entrer votre réponse: ");
         return scanner.nextLine();
     }
 
-    public static void main(String[] args) {
-        IHM ihm = new IHM();
-
-        ihm.displayMessage("Welcome to this application!");
-        String userInput = ihm.getUserInput();
-        ihm.displayMessage("You entered: " + userInput);
+    @Override
+    public String toString() {
+        return "IHM{" +
+                "scanner=" + scanner +
+                '}';
     }
 }

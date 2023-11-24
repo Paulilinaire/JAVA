@@ -28,10 +28,10 @@ public class Demo {
 
         BookService bookService = new BookService();
         String listBooksByAuthor = bookService.filterBooksByAuthor(books[2].getAuthor()[0], books);
-        //System.out.println(listBooksByAuthor);
+        System.out.println(listBooksByAuthor);
 
         String listBooksByPublisher = bookService.filterBooksByPublisher(books[0].getPublisher(), books);
-        //System.out.println(listBooksByPublisher);
+        System.out.println(listBooksByPublisher);
 
         String listBooksByPublishingYear = bookService.filterBooksByPublishingYear(2000, books);
         System.out.println(listBooksByPublishingYear);
