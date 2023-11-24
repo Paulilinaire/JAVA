@@ -7,7 +7,7 @@ public class Author {
 
     public static int counter = 0;
 
-    public Author(String firstName, String lastName) {
+    public Author(int id, String firstName, String lastName) {
         this.id = counter++;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -46,8 +46,6 @@ public class Author {
         Author.counter = counter;
     }
 
-    public Author(int i, String jon, String johnson) {
-    }
 
     @Override
     public String toString() {

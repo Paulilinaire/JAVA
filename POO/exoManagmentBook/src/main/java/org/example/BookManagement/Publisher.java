@@ -11,6 +11,30 @@ public class Publisher {
         this.name = name;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public static int getCounter() {
+        return counter;
+    }
+
+    public static void setCounter(int counter) {
+        Publisher.counter = counter;
+    }
+
     @Override
     public String toString() {
         return "Publisher{" +

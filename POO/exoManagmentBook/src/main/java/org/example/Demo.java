@@ -4,8 +4,11 @@ import org.example.BookManagement.Author;
 import org.example.BookManagement.Book;
 import org.example.BookManagement.CoverType;
 import org.example.BookManagement.Publisher;
+import org.example.BookService;
 
 import java.math.BigDecimal;
+import java.sql.SQLOutput;
+import java.util.Arrays;
 
 
 public class Demo {
@@ -22,10 +25,19 @@ public class Demo {
                         CoverType.Hardcover)
         };
 
-        // Print information about each book
-        for (Book book : books) {
-            System.out.println(book);
-        }
+
+        BookService bookService = new BookService();
+        String listBooksByAuthor = bookService.filterBooksByAuthor(books[2].getAuthor()[0], books);
+        //System.out.println(listBooksByAuthor);
+
+        String listBooksByPublisher = bookService.filterBooksByPublisher(books[0].getPublisher(), books);
+        //System.out.println(listBooksByPublisher);
+
+        String listBooksByPublishingYear = bookService.filterBooksByPublishingYear(2000, books);
+        System.out.println(listBooksByPublishingYear);
+
+
     }
+
 
 }

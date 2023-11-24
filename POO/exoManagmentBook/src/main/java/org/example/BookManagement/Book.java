@@ -4,14 +4,14 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 
 public class Book {
-    int id;
-    String name;
-    Author[] author;
-    Publisher publisher;
-    int publishingYear;
-    int amountOfPages;
-    BigDecimal price;
-    CoverType coverType;
+    private int id;
+    private String name;
+    private Author[] author;
+    private Publisher publisher;
+    private int publishingYear;
+    private int amountOfPages;
+    private BigDecimal price;
+    private CoverType coverType;
 
     public static int counter = 0;
 
