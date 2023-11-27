@@ -72,18 +72,19 @@ public class Hotel {
     }
 
 
-    /*public void roomingListDisplay() {
+
+    public void roomingListDisplay() {
         if (roomingList != null) {
-            ihm.displayMessage("Rooming List for " + name + ":");
+            ihm.displayMessage("Rooming-liste pour l'hôtel " + name + ":");
             for (Room room : roomingList) {
                 if (room != null) {
                     ihm.displayMessage(room.toString());
                 }
             }
         } else {
-            ihm.displayMessage("Rooming List is not initialized.");
+            ihm.displayMessage("Erreur ! Il n'y a pas de client dans la rooming-liste.");
         }
-    }*/
+    }
 
     @Override
     public String toString() {

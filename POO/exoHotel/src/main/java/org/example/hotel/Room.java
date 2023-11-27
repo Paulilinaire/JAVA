@@ -5,12 +5,16 @@ public class Room {
     private Boolean isOccupied = false;
     private double price;
     private int capacity;
+    private Client client;
 
     public Room(long number, Boolean isOccupied, double price, int capacity) {
         this.number = number;
         this.isOccupied = isOccupied;
         this.price = price;
         this.capacity = capacity;
+    }
+
+    public Room(Client client) {
     }
 
     public long getNumber() {
@@ -45,6 +49,14 @@ public class Room {
         this.capacity = capacity;
     }
 
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
     @Override
     public String toString() {
         return "Room{" +
@@ -52,6 +64,7 @@ public class Room {
                 ", isOccupied=" + isOccupied +
                 ", price=" + price +
                 ", capacity=" + capacity +
+                ", client=" + client +
                 '}';
     }
 }
