@@ -74,7 +74,6 @@ public class Library {
             listOfBooks = new ArrayList<>();
         }
 
-        // Check if the PaperBook object is not null before accessing its methods
         if (paperBook != null) {
             listOfBooks.add(paperBook);
             System.out.println("Livre ajouté à la bibliothèque: " + paperBook.getAuthor() + " - " + paperBook.getTitle());
@@ -88,7 +87,6 @@ public class Library {
                 listOfBooks = new ArrayList<>();
             }
 
-            // Check if the Ebook object is not null before accessing its methods
             if (ebook != null) {
                 listOfBooks.add(ebook);
                 System.out.println("Livre numérique ajouté à la bibliothèque: " + ebook.getAuthor() + " - " + ebook.getTitle());
@@ -97,16 +95,13 @@ public class Library {
             }
         }
 
-    public String filteredBooksByAuthor(String author) {
-            for (Book b : listOfBooks) {
-                if (author.equals(b.getAuthor())) {
-                    System.out.println(b);
-                }
+    public void filteredBooksByAuthor(String author) {
+        for (Book book : listOfBooks) {
+            if (author.equals(book.getAuthor())) {
+                System.out.println(book);
             }
-        return book.getAuthor();
+        }
     }
-
-
 
     public void deleteBook(){
         listOfBooks.remove(book);

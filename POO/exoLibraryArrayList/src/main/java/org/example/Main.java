@@ -32,7 +32,11 @@ public class Main {
         //Filter by Author
         System.out.println("Quel est le nom de l'auteur que vous cherchez ?");
         String authorFilter = scanner.next();
-        
+
+        library.filteredBooksByAuthor(authorFilter);
+
+
+
 
 
 
