@@ -1,8 +1,9 @@
 package org.example;
 
-import org.example.library.Ebook;
-import org.example.library.Library;
-import org.example.library.PaperBook;
+import org.example.classes.Ebook;
+import org.example.classes.Library;
+import org.example.classes.PaperBook;
+import org.example.classes.Person;
 
 import java.util.Scanner;
 
@@ -16,24 +17,36 @@ public class Main {
         Library library = new Library();
 
         // Adding PaperBooks
-        PaperBook paperBook1 = new PaperBook("To Kill a Mockingbird", "Harper Lee", "PublisherA", 300);
-        library.addPaperBook(paperBook1);
+        PaperBook paperBook1 = new PaperBook(1,"To Kill a Mockingbird", "Harper Lee", "PublisherA", 300);
+        library.addBook(paperBook1);
 
-        PaperBook paperBook2 = new PaperBook("1984", "George Orwell", "PublisherB", 250);
-        library.addPaperBook(paperBook2);
+        PaperBook paperBook2 = new PaperBook(2,"1984", "George Orwell", "PublisherB", 250);
+        library.addBook(paperBook2);
 
         // Adding Ebooks
-        Ebook ebook1 = new Ebook("The Catcher in the Rye", "J.D. Salinger", "EPUB");
-        library.addEbook(ebook1);
+        Ebook ebook1 = new Ebook(3,"The Catcher in the Rye", "J.D. Salinger", "EPUB", 102400L);
+        library.addBook(ebook1);
 
-        Ebook ebook2 = new Ebook("The Great Gatsby", "F. Scott Fitzgerald", "PDF");
-        library.addEbook(ebook2);
+        Ebook ebook2 = new Ebook(4,"The Great Gatsby", "F. Scott Fitzgerald", "PDF", 204800L);
+        library.addBook(ebook2);
 
-        //Filter by Author
-        System.out.println("Quel est le nom de l'auteur que vous cherchez ?");
-        String authorFilter = scanner.next();
 
-        library.filteredBooksByAuthor(authorFilter);
+        System.out.println(library.filteredBooksByAuthor("Lee"));
+        library.deleteBook(3);
+        System.out.println(library.filteredBooksByAuthor("Lee").size());
+        System.out.println(library.filteredBooksByTitle("1984"));
+
+        System.out.println(library.getLoans());
+        library.borrowBook(2, new Person("Aijjou", "Mohamed"));
+        System.out.println(library.getLoans());
+        library.returnBook(2);
+        System.out.println(library.getLoans());
+
+
+
+
+
+
 
 
 
