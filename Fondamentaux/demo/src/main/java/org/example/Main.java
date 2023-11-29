@@ -1,6 +1,9 @@
 package org.example;
 
 import org.example.arrayMatrix.ArrayMatrix;
+import org.example.collections.DemoCollection;
+import org.example.collections.Liste;
+import org.example.date.Date;
 import org.example.operator.Operator;
 import org.example.readFromConsole.ReadFromConsole;
 
@@ -20,6 +23,6 @@ public class Main {
 //        ReadFromConsole.getReadWrite();
 //        Structure2.getWhile();
 //        ChaineDeCaractere.getFormatString();
-        ArrayMatrix.getMatrix2();
+        DemoCollection.main();
         }
     }

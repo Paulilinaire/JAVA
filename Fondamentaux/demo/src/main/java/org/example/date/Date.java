@@ -37,9 +37,9 @@ public class Date {
         System.out.println(dateOfToday.isEqual(dateMinusThreeDays));
 
         // Formatage de la date
-        String dateInString = "01-01-23";
+        String dateInString = "2023-01-01";
 
-        LocalDate dateIntoString = LocalDate.parse(dateInString, DateTimeFormatter.ofPattern("dd-MM-yy"));
+        LocalDate dateIntoString = LocalDate.parse(dateInString, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         //bonne pratique => à mettre dans un try catch, try "dateIntoString" ok sinon "ressaisir la date".
         System.out.println(dateIntoString);
         System.out.println(dateOfToday.isBefore(dateIntoString));

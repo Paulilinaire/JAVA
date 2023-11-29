@@ -16,4 +16,20 @@ public class ReadFromConsole {
         System.out.println("Tu as " + nombre + "ans");
 
     }
+
+    // bonne pratique = un seul point d'entrée par classe
+    public static void main() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Entrer un entier: ");
+        int num = scanner.nextInt();
+        System.out.println("Nombre saisie: " + num);
+
+        System.out.println("Entrer une chaine: ");
+        scanner.nextLine();
+        String str = scanner.nextLine();
+        System.out.println("Vous aavre saisi " + str);
+        // !!erreur car .nextInt() suivi d'un .nextLine() ne fonctionne pas!!
+        // Pour y remédier mettre un .nextLine() vide après le .nextInt()
+    }
 }
