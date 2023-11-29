@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Invoice {
     private static int invoiceCounter = 0;
-
     private int invoiceNumber;
     private String client;
     private String date;

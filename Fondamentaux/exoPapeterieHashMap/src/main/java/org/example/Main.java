@@ -26,7 +26,14 @@ public class Main {
         System.out.println("--------------");
         System.out.println("Afficher un lot");
         System.out.println(Item.getItem("b1"));
-        
+        System.out.println();
+
+        System.out.println("--------------");
+        Invoice myInvoice = new Invoice("John Doe","2023-11-29");
+        myInvoice.addLine(myPen1, 2);
+        myInvoice.addLine(myReam2, 1);
+
+        myInvoice.displayInvoice();
 
 
 
