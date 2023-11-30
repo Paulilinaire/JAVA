@@ -1,13 +1,11 @@
 package org.example;
 
-import org.example.exercice2.Exercice2;
 import org.example.exercice3.Exercice3;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
 //        Exercice2.convertStringIntoInt();
-        Exercice3.nonExistantIndex();
+        Exercice3.nonExistentIndex();
     }
 }

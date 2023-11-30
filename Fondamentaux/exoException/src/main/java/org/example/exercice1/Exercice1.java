@@ -15,7 +15,7 @@ public class Exercice1 {
             Integer divider = scanner.nextInt();
             double result = value / divider;
             System.out.println("Résutlat : " + result);
-        } catch (ArithmeticException | InputMismatchException e) {
+        } catch (ArithmeticException | InputMismatchException e) { // exception non surveillée
             System.out.println("Mauvaise saisie !");
         }
         System.out.println("Fin du programme !");
