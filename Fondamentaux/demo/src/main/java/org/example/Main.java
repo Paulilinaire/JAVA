@@ -4,6 +4,9 @@ import org.example.arrayMatrix.ArrayMatrix;
 import org.example.collections.DemoCollection;
 import org.example.collections.Liste;
 import org.example.date.Date;
+import org.example.exception.DeckOfCards;
+import org.example.exception.MyException;
+import org.example.exception.SimpleExample;
 import org.example.operator.Operator;
 import org.example.readFromConsole.ReadFromConsole;
 
@@ -23,6 +26,17 @@ public class Main {
 //        ReadFromConsole.getReadWrite();
 //        Structure2.getWhile();
 //        ChaineDeCaractere.getFormatString();
-        DemoCollection.main();
+//        SimpleExample.exceptionExample();
+        DeckOfCards deckOfCards = new DeckOfCards();
+        deckOfCards.trade(2);
+
+        try {
+            deckOfCards.draw(1);
+        } catch (MyException e){
+            System.out.println(e.getMessage());
+        }
+
+
+
         }
     }

@@ -20,4 +20,11 @@ public class Line {
     double calculateTotalPrice() {
         return item.getPrice() * quantity;
     }
+
+    @Override
+    public String toString() {
+        return
+                "item=" + item +
+                ", quantity=" + quantity ;
+    }
 }

@@ -3,7 +3,7 @@ package org.example.collections;
 import java.util.*;
 
 public class DemoCollection {
-    public static void main() {I
+    public static void main() {
         // Vector
         System.out.println("-------- Vector --------");
         Vector<String> vector = new  Vector<>();

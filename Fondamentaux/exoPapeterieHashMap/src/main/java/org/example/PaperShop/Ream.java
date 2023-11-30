@@ -8,9 +8,6 @@ public class Ream extends OneItem {
         this.grammage = grammage;
     }
 
-    public int getGrammage() {
-        return grammage;
-    }
 
     @Override
     public String toString() {

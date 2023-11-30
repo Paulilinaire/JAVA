@@ -6,8 +6,7 @@ import java.util.List;
 public class Invoice {
     private static int invoiceCounter = 0;
     private int invoiceNumber;
-    private String client;
-    private String date;
+    private String client, date;
     private List<Line> purchasedItems;
 
     public Invoice(String client, String date) {
@@ -25,7 +24,7 @@ public class Invoice {
         purchasedItems.add(new Line(item, quantity));
     }
 
-    public double getPrixTotal() {
+    public double getTotalPrice() {
         double total = 0.0;
         for (Line line : purchasedItems) {
             total += line.calculateTotalPrice();
@@ -34,7 +33,7 @@ public class Invoice {
     }
 
     public void displayInvoice() {
-        System.out.println("Invoice Number: " + invoiceNumber);
+        System.out.println("Facture numéro: " + invoiceNumber);
         System.out.println("Client: " + client);
         System.out.println("Date: " + date);
         System.out.println("----------------------------");
@@ -42,6 +41,8 @@ public class Invoice {
             line.displayLine();
             System.out.println("----------------------------");
         }
-        System.out.println("Total Price: " + getPrixTotal());
+        System.out.println("Prix total de la facture: " + getTotalPrice());
     }
+
+
 }

@@ -11,11 +11,6 @@ public class OneItem extends Item {
         this.price = price;
     }
 
-    public OneItem(String reference) {
-        super(reference);
-    }
-
-
     @Override
     public String getName() {
         return name;

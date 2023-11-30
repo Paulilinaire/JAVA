@@ -8,6 +8,7 @@ public abstract class Item {
 
     public Item(String reference) {
         this.reference = reference;
+        //Adding to the database
         database.put(reference, this);
     }
 
@@ -23,16 +24,13 @@ public abstract class Item {
         return database.get(reference);
     }
 
-
-
     public abstract String getName();
     public abstract double getPrice();
 
 
     @Override
     public String toString() {
-        return "Item{" +
-                "reference=" + reference +
-                '}';
+        return "Item : " +
+                "reference =" + reference ;
     }
 }
