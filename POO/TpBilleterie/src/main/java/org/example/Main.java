@@ -15,6 +15,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+
         // Create a Place with scanner
         System.out.println("Enter place details:");
         System.out.print("Name: ");
@@ -40,7 +41,7 @@ public class Main {
         System.out.print("Price: ");
         double eventPrice = scanner.nextDouble();
         scanner.nextLine();
-        Event event = new Event(eventName, eventDate, eventHour, place, eventPrice);
+        Event event = new Event(eventName, eventDate, eventHour, eventPrice);
 
 
         // Create a Client with scanner
@@ -55,8 +56,8 @@ public class Main {
 
         // Display information
         System.out.println("\nPlace created: " + place);
-        System.out.println("Event created: " + event);
-        System.out.println("Client created: " + client);
+        System.out.println("\nEvent created: " + event);
+        System.out.println("\nClient created: " + client);
 
 
 

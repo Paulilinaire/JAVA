@@ -23,12 +23,11 @@ public class Event {
     @Getter
     public ArrayList<Event> allEvents = new ArrayList<>();
 
-    public Event(String name, LocalDate date, LocalTime hour, Place place, double price) {
+    public Event(String name, LocalDate date, LocalTime hour, double price) {
         this.id = counter++;
         this.name = name;
         this.date = date;
         this.hour = hour;
-        this.place = place;
         this.price = price;
         allEvents.add(this);
     }
@@ -43,7 +42,7 @@ public class Event {
     }
 
     public boolean addEvent(String name, String address, int capacity) {
-        Event newEvent = new Event(name, date, hour, place, price);
+        Event newEvent = new Event(name, date, hour, price);
         return allEvents.add(newEvent);
     }
 
@@ -82,11 +81,13 @@ public class Event {
     }
 
     public void cancelTicket() throws TicketSaleException {
-            if (ticketsSold > 0) {
+            if (!checkTicketAvailability()) {
                 ticketsSold--;
                 System.out.println("Billet annulé!");
             } else {
                 throw new TicketSaleException("Attention, il n'y a aucun billet à annuler !");
             }
     }
+
+    //add setDateTime exception (if this.date = this.date.isAfterLocalDateTime)
 }

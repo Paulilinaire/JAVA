@@ -1,6 +1,6 @@
 package org.example.exceptions;
 
-public class TicketSaleException extends Exception{
+public class TicketSaleException extends RuntimeException{
     public TicketSaleException(String message){
         super(message);
     }

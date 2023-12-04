@@ -2,11 +2,13 @@ package org.example.classes;
 
 import lombok.Data;
 import lombok.Getter;
+import org.example.exceptions.CustomFormatException;
 import org.example.exceptions.TicketSaleException;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 @Data
 public class Client {
@@ -25,7 +27,7 @@ public class Client {
         this.id = counter++;
         this.lastname = lastname;
         this.firstname = firstname;
-        this.email = email;
+        setEmail(email);
     }
 
     private Client findClient(int id) {
@@ -35,6 +37,16 @@ public class Client {
             }
         }
         return null;
+    }
+
+    public  void setEmail(String lastname) throws CustomFormatException{
+        String pattern = "^([a-zA-Z0-9_.-]+)@([a-z0-9-]+\\.?[a-z0-9-]+)\\.([a-z]{2,6})$";
+        //REGEX: [] un bloc, "+" pr concaténer un autre bloc pouvant contenir des minuscules et majuscules de a à z, des chiffres, un point et un tiret, {2,6} = de 2 à 6 caractères
+        //verificateur regex: https://regexr.com/
+        if(Pattern.matches(pattern, email)){
+            throw  new CustomFormatException("email incorrecte");
+        }
+        this.email = email;
     }
 
     public boolean addClient(String lastname, String firstname, String email) {
@@ -50,7 +62,7 @@ public class Client {
         return false;
     }
 
-    public boolean changeCLient(String newLastname, String newFirstname, String newEmail) {
+    public boolean changeCLient(String newLastname, String newFirstname, String newEmail) throws CustomFormatException {
         Client client = findClient(id);
         if (client != null) {
             client.setLastname(newLastname);

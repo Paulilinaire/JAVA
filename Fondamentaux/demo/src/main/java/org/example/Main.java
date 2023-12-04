@@ -10,6 +10,7 @@ import org.example.exception.SimpleExample;
 import org.example.operator.Operator;
 import org.example.readFromConsole.ReadFromConsole;
 
+import org.example.streams.Calculatrice;
 import org.example.string.ChaineDeCaractere;
 import org.example.structure.Structure;
 import org.example.structure.Structure2;
@@ -27,14 +28,19 @@ public class Main {
 //        Structure2.getWhile();
 //        ChaineDeCaractere.getFormatString();
 //        SimpleExample.exceptionExample();
-        DeckOfCards deckOfCards = new DeckOfCards();
-        deckOfCards.trade(2);
+//        DeckOfCards deckOfCards = new DeckOfCards();
+//        deckOfCards.trade(2);
+//
+//        try {
+//            deckOfCards.draw(1);
+//        } catch (MyException e){
+//            System.out.println(e.getMessage());
+//        }
 
-        try {
-            deckOfCards.draw(1);
-        } catch (MyException e){
-            System.out.println(e.getMessage());
-        }
+        Calculatrice calculatrice = new Calculatrice();
+        double totalAddition = calculatrice.calcule(10, 30, (a,b) -> a + b);
+        double totalSoustraction = calculatrice.calcule(10,30,Calculatrice::soustraction); //:: pour faire appel à la methode
+        System.out.println(totalSoustraction);
 
 
 

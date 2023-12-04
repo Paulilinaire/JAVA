@@ -4,12 +4,12 @@ import lombok.Data;
 import lombok.Getter;
 
 import java.util.ArrayList;
+import java.util.InvalidPropertiesFormatException;
 import java.util.List;
 
 @Data
 public class Place {
     private static int counter = 1;
-
     private int id;
     private String name;
     private String address;
@@ -62,7 +62,7 @@ public class Place {
     }
 
 
-
+    // add setName exception (if name.length > 2)
 
 
 }
