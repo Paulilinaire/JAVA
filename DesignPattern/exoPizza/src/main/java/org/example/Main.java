@@ -20,10 +20,13 @@ public class Main {
                 .build();
         System.out.println(pizza);
 
-        Pizza pizza1 = new Pizza.Builder()
+        Pizza pizzaDegueu = new Pizza.Builder()
                 .size(Size.SMALL)
                 .pastryType(PastryType.CLASSIC)
-                .sauce("tomato")
+                .cheese(Cheese.WITHOUTCHEESE)
+                .ingredients(List.of("pineapple", "capers", "capsicum"))
+                .sauce("cream")
                 .build();
+        System.out.println(pizzaDegueu);
     }
 }
