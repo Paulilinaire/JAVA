@@ -1,4 +1,4 @@
-package org.example.demoBuilder;
+package org.example.builder;
 
 public class Car {
     private String brand;

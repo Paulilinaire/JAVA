@@ -40,6 +40,8 @@ public class Pizza {
         }
 
         public Builder cheese(Cheese cheese){
+            if(this.cheese != null)
+                throw new RuntimeException("Un fromage a déjà été choisi");
             this.cheese= cheese;
             return this;
         }
