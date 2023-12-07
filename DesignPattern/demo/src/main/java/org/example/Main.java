@@ -5,6 +5,9 @@ import org.example.abstractFactory.Application;
 import org.example.abstractFactory.MacFactory;
 import org.example.abstractFactory.WindowsFactory;
 import org.example.builder.Car;
+import org.example.observable.Phone;
+import org.example.observable.Tablet;
+import org.example.observable.WeatherStation;
 import org.example.singleton.Storage;
 
 import java.util.List;
@@ -30,6 +33,17 @@ public class Main {
         //Singleton
         List<Car> liste = Storage.getInstance().getCarList();
 
+        //Observable
+            WeatherStation weatherStation = new WeatherStation();
+            Phone phone = new Phone();
+            Tablet tablet = new Tablet();
+            weatherStation.registerObserver(phone);
+            weatherStation.registerObserver(tablet);
 
+            weatherStation.randomTemperature();
+
+            weatherStation.randomTemperature();
+            weatherStation.removeObserver(tablet);
+            weatherStation.randomTemperature();
+        }
     }
-}
