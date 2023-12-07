@@ -9,6 +9,8 @@ import java.util.List;
 @AllArgsConstructor
 public class Product implements Subject {
 
+    private String name;
+
     private int stockLevel;
 
     List<Observer> observers;
