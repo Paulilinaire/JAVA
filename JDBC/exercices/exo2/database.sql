@@ -1,0 +1,26 @@
+CREATE DATABASE exo2;
+
+USE exo2;
+
+CREATE TABLE client(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+login VARCHAR(50),
+phone_number VARCHAR(15)
+);
+
+CREATE TABLE operation(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+amount DOUBLE,
+status VARCHAR(20),
+id_account INT NOT NULL,
+FOREIGN KEY(id_account) REFERENCES account(id)
+);
+
+CREATE TABLE account(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+balance DOUBLE,
+id_client INT NOT NULL,
+FOREIGN KEY(id_client) REFERENCES client(id)
+);
