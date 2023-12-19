@@ -21,4 +21,8 @@ public class Client {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
+    public Client() {
+
+    }
 }

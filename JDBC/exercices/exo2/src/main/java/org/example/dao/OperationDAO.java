@@ -28,26 +28,26 @@ public class OperationDAO extends BaseDAO<Operation> {
         return nbRows == 1;
     }
 
-    @Override
-    public boolean update(Operation element) throws SQLException {
-        request = "UPDATE person SET first_name = ?, last_name = ? WHERE id = ?";
-        statement = _connection.prepareStatement(request);
-        statement.setDouble(1, element.getAmount());
-        statement.setString(2, element.getStatus().name());
-        statement.setInt(3,element.getId());
-        int nbRows = statement.executeUpdate();
-        return nbRows == 1;
-    }
-
-    @Override
-    public boolean delete(Operation element) throws SQLException {
-        Operation operation = null;
-        request = "DELETE FROM person WHERE id = ?";
-        statement = _connection.prepareStatement(request);
-        statement.setInt(1,element.getId());
-        int nbRows = statement.executeUpdate();
-        return nbRows == 1;
-    }
+//    @Override
+//    public boolean update(Operation element) throws SQLException {
+//        request = "UPDATE person SET first_name = ?, last_name = ? WHERE id = ?";
+//        statement = _connection.prepareStatement(request);
+//        statement.setDouble(1, element.getAmount());
+//        statement.setString(2, element.getStatus().name());
+//        statement.setInt(3,element.getId());
+//        int nbRows = statement.executeUpdate();
+//        return nbRows == 1;
+//    }
+//
+//    @Override
+//    public boolean delete(Operation element) throws SQLException {
+//        Operation operation = null;
+//        request = "DELETE FROM person WHERE id = ?";
+//        statement = _connection.prepareStatement(request);
+//        statement.setInt(1,element.getId());
+//        int nbRows = statement.executeUpdate();
+//        return nbRows == 1;
+//    }
 
 
     @Override

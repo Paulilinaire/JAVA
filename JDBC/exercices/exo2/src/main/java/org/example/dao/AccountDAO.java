@@ -24,25 +24,25 @@ public class AccountDAO extends BaseDAO<Account>{
         return nbRows == 1;
     }
 
-    @Override
-    public boolean update(Account element) throws SQLException {
-        request = "UPDATE account SET balance = ?, id_client = ? WHERE id = ?";
-        statement = _connection.prepareStatement(request);
-        statement.setDouble(1, element.getBalance());
-        statement.setInt(2, element.getClient().getId());
-        statement.setInt(3,element.getId());
-        int nbRows = statement.executeUpdate();
-        return nbRows == 1;
-    }
-
-    @Override
-    public boolean delete(Account element) throws SQLException {
-        request = "DELETE FROM account WHERE id = ?";
-        statement = _connection.prepareStatement(request);
-        statement.setInt(1,element.getId());
-        int nbRows = statement.executeUpdate();
-        return nbRows == 1;
-    }
+//    @Override
+//    public boolean update(Account element) throws SQLException {
+//        request = "UPDATE account SET balance = ?, id_client = ? WHERE id = ?";
+//        statement = _connection.prepareStatement(request);
+//        statement.setDouble(1, element.getBalance());
+//        statement.setInt(2, element.getClient().getId());
+//        statement.setInt(3,element.getId());
+//        int nbRows = statement.executeUpdate();
+//        return nbRows == 1;
+//    }
+//
+//    @Override
+//    public boolean delete(Account element) throws SQLException {
+//        request = "DELETE FROM account WHERE id = ?";
+//        statement = _connection.prepareStatement(request);
+//        statement.setInt(1,element.getId());
+//        int nbRows = statement.executeUpdate();
+//        return nbRows == 1;
+//    }
 
 
     @Override
