@@ -4,6 +4,8 @@ import org.example.models.Account;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class AccountDAO extends BaseDAO<Account>{
@@ -22,6 +24,23 @@ public class AccountDAO extends BaseDAO<Account>{
             element.setId(resultSet.getInt(1));
         }
         return nbRows == 1;
+    }
+
+    @Override
+    public List<Account> getAll() throws SQLException {
+        List<Account> result = new ArrayList<>();
+        request = "SELECT * FROM account";
+        statement = _connection.prepareStatement(request);
+        resultSet = statement.executeQuery();
+        while (resultSet.next()){
+            Account account = new Account(
+                    resultSet.getInt("id"),
+                    resultSet.getDouble("balance"),
+                    resultSet.getInt("id_client")
+            );
+            result.add(account);
+        }
+        return result;
     }
 
 //    @Override

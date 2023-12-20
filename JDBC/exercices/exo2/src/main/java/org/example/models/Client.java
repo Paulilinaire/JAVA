@@ -16,9 +16,10 @@ public class Client {
     private String phoneNumber;
     private List<Account> accounts = new ArrayList<>();
 
-    public Client(int id, String firstName, String lastName) {
+    public Client(int id, String firstName, String lastName, String phoneNumber) {
         this.id = id;
         this.firstName = firstName;
+        this.phoneNumber = phoneNumber;
         this.lastName = lastName;
     }
 

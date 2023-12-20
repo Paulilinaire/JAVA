@@ -22,15 +22,7 @@ public class Account {
         this.idClient = idClient;
     }
 
-    public Account(Client client) {
-        this.client = client;
-        this.balance = 0.0;
-        this.operations = new ArrayList<>();
-    }
-
-    public void deposit(double amount) {
-        this.balance += amount;
-        operations.add(new Operation(amount, OperationStatus.DEPOSIT));
+    public Account() {
     }
 
     public void withdrawl(double amount) {

@@ -28,6 +28,23 @@ public class OperationDAO extends BaseDAO<Operation> {
         return nbRows == 1;
     }
 
+    @Override
+    public List<Operation> getAll() throws SQLException {
+        List<Operation> result = new ArrayList<>();
+        request = "SELECT * FROM person";
+        statement = _connection.prepareStatement(request);
+        resultSet = statement.executeQuery();
+        while (resultSet.next()){
+            Operation operation = new Operation(
+                    resultSet.getInt("id"),
+                    resultSet.getDouble("amount"),
+                    OperationStatus.valueOf(resultSet.getString("status"))
+            );
+            result.add(operation);
+        }
+        return result;
+    }
+
 //    @Override
 //    public boolean update(Operation element) throws SQLException {
 //        request = "UPDATE person SET first_name = ?, last_name = ? WHERE id = ?";
@@ -58,11 +75,30 @@ public class OperationDAO extends BaseDAO<Operation> {
         statement.setInt(1,id);
         resultSet = statement.executeQuery();
         if(resultSet.next()){
-            operation = new Operation(resultSet.getInt("id"),
+            operation = new Operation(
+                    resultSet.getInt("id"),
                     resultSet.getDouble("amount"),
-                    OperationStatus.valueOf(resultSet.getString("status")));
+                    OperationStatus.valueOf(resultSet.getString("status"))
+            );
         }
         return operation;
+    }
+
+    public void deposit(int accountId, double amount) throws SQLException {
+        request = "UPDATE account SET balance = (balance + ?) WHERE id_Account = ?";
+        statement = _connection.prepareStatement(request, Statement.RETURN_GENERATED_KEYS);
+        statement.setInt(1,accountId);
+        resultSet = statement.executeQuery();
+        if (resultSet.next()){
+            statement.setDouble(1, amount);
+            statement.setInt(2, accountId);
+            int affectedRows = statement.executeUpdate();
+            if (affectedRows > 0) {
+                System.out.println("Dépôt effectué avec succés.");
+            } else {
+                System.out.println("Erreur lors du dépôt.");
+            }
+        }
     }
 
 }
