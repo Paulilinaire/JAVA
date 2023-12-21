@@ -11,6 +11,8 @@ import org.example.services.EventService;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.*;
 
 public class Ihm {
@@ -122,7 +124,6 @@ public class Ihm {
         System.out.println("Quel lieu voulez-vous modifier (n°id) : ");
         int entry = s.nextInt();
 
-        System.out.println(locationsList.get(entry - 1));
         System.out.println("Entrer le nouveau nom : ");
         String newName = s.next();
         System.out.println("Entrer la nouvelle adresse : ");
@@ -181,10 +182,10 @@ public class Ihm {
                     addEvent();
                     break;
                 case 2:
-
+                    updateEvent();
                     break;
                 case 3 :
-                    suprEvenement();
+                    deleteEvent();
                     break;
                 case 4 :
                     showList(eventsList);
@@ -204,40 +205,78 @@ public class Ihm {
         }
     }
 
-    public static void addEvent (){
-            System.out.println("--------Ajouter Evénement----------");
-
+    public static void addEvent() {
+        try {
             System.out.println("Entrer le nom de l'evenement:");
-            String nom = s.next();
+            String name = s.next();
 
             System.out.println("Entrer la date de l'evenement (format dd-MM-yyyy):");
             String date_string = s.next();
             SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
             Date date = formatter.parse(date_string);
 
+            showList(eventsList);
+            System.out.println("Sélectionner le lieu de l'événement :");
+            int location = s.nextInt();
+
+            System.out.println("Entrer le prix du billet");
+            double price = s.nextDouble();
+
+            eventService.createEvent(name, date, price, location);
+
+        } catch (ParseException e) {
+            System.out.println("Erreur lors de la saisie de la date.");
+        } catch (CustomFormatException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    public static void suprEvenement (){
+    public static void updateEvent() {
+        try {
+            System.out.println("--------Modifier Evénement----------");
+            showList(customersList);
+            System.out.println("Quel événement voulez-vous modifier (n° id) : ");
+            int entry = s.nextInt();
+
+            System.out.println("Entrer à nouveau le nom : ");
+            String newName = s.next();
+            System.out.println("Entrer à nouveau la date : ");
+            String newDate = s.nextLine();
+            System.out.println("Entrer l'id du lieu : ");
+            int newLocationId = s.nextInt();
+            System.out.println("Entrer à nouveau le prix de l'événement : ");
+            double newPrice = s.nextDouble();
+            s.nextLine();
+
+            Event event = new Event(newName, newDate, newLocationId, newPrice);
+
+        } catch (IndexOutOfBoundsException e) {
+            customerMenu();
+        }
+    }
+
+
+    public static void deleteEvent (){
         try{
-            System.out.println("--------supr evenement----------");
-            showList(listEvenement);
-            System.out.println("quelle evenement vouler vous supprimer (0 pour retour) : ");
+            System.out.println("--------Supprimer événement----------");
+            showList(eventsList);
+            System.out.println("Quel événement voulez_vous supprimer (0 pour retour) : ");
             int entry = s.nextInt();
 
             if(entry == 0){
                 eventMenu();
             }
             else{
-                listEvenement.remove(entry-1);
-                System.out.println("l'evenement a bien ete supprimer");
+                eventService.deleteEvent(entry);
                 eventMenu();
             }
         }
         catch( InputMismatchException e){
-            System.out.println("Entrer une valeur numerique ");
-            suprEvenement();
+            System.out.println("Entrer une valeur numérique ");
+            deleteEvent();
         }
     }
+
 
     //gestion client
 
