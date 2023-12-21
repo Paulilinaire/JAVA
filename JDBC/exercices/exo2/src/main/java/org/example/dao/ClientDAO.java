@@ -13,19 +13,28 @@ public class ClientDAO extends BaseDAO<Client> {
 
     @Override
     public boolean save(Client element) throws SQLException {
-        String request = "INSERT INTO client (first_name, last_name, phone_number) VALUES (?, ?, ?)";
-        try (PreparedStatement statement = _connection.prepareStatement(request, Statement.RETURN_GENERATED_KEYS)) {
-            statement.setString(1, element.getFirstName());
-            statement.setString(2, element.getLastName());
-            statement.setString(3, element.getPhoneNumber());
-            int nbRows = statement.executeUpdate();
-            try (ResultSet resultSet = statement.getGeneratedKeys()) {
-                if (resultSet.next()) {
-                    element.setId(resultSet.getInt(1));
-                }
-            }
-            return nbRows == 1;
+        request = "INSERT INTO client (first_name, last_name) VALUES (?, ?, ?)";
+        statement = _connection.prepareStatement(request, Statement.RETURN_GENERATED_KEYS);
+        statement.setString(1, element.getFirstName());
+        statement.setString(2, element.getLastName());
+        statement.setString(3, element.getPhoneNumber());
+        int nbRows = statement.executeUpdate();
+        resultSet = statement.getGeneratedKeys();
+        if(resultSet.next()){
+            element.setId(resultSet.getInt(1));
         }
+        return nbRows == 1;
+    }
+
+    @Override
+    public boolean update(Client element) throws SQLException {
+        request = "UPDATE client SET first_name = ?, last_name = ? WHERE id = ?";
+        statement = _connection.prepareStatement(request);
+        statement.setString(1, element.getFirstName());
+        statement.setString(2, element.getLastName());
+        statement.setString(3, element.getPhoneNumber());
+        int nbRows = statement.executeUpdate();
+        return nbRows == 1;
     }
 
     @Override

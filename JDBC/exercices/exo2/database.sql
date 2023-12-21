@@ -25,3 +25,9 @@ balance DOUBLE,
 id_client INT NOT NULL,
 FOREIGN KEY(id_client) REFERENCES client(id)
 );
+
+ALTER TABLE operation
+    MODIFY amount DECIMAL(15,2) DEFAULT 0;
+
+ALTER TABLE account
+    MODIFY balance DECIMAL(15,2) DEFAULT 0;

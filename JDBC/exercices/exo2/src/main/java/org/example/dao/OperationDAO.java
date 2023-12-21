@@ -45,16 +45,16 @@ public class OperationDAO extends BaseDAO<Operation> {
         return result;
     }
 
-//    @Override
-//    public boolean update(Operation element) throws SQLException {
-//        request = "UPDATE person SET first_name = ?, last_name = ? WHERE id = ?";
-//        statement = _connection.prepareStatement(request);
-//        statement.setDouble(1, element.getAmount());
-//        statement.setString(2, element.getStatus().name());
-//        statement.setInt(3,element.getId());
-//        int nbRows = statement.executeUpdate();
-//        return nbRows == 1;
-//    }
+    @Override
+    public boolean update(Operation element) throws SQLException {
+        request = "UPDATE person SET first_name = ?, last_name = ? WHERE id = ?";
+        statement = _connection.prepareStatement(request);
+        statement.setDouble(1, element.getAmount());
+        statement.setString(2, element.getStatus().name());
+        statement.setInt(3,element.getId());
+        int nbRows = statement.executeUpdate();
+        return nbRows == 1;
+    }
 //
 //    @Override
 //    public boolean delete(Operation element) throws SQLException {
@@ -84,21 +84,5 @@ public class OperationDAO extends BaseDAO<Operation> {
         return operation;
     }
 
-    public void deposit(int accountId, double amount) throws SQLException {
-        request = "UPDATE account SET balance = (balance + ?) WHERE id_Account = ?";
-        statement = _connection.prepareStatement(request, Statement.RETURN_GENERATED_KEYS);
-        statement.setInt(1,accountId);
-        resultSet = statement.executeQuery();
-        if (resultSet.next()){
-            statement.setDouble(1, amount);
-            statement.setInt(2, accountId);
-            int affectedRows = statement.executeUpdate();
-            if (affectedRows > 0) {
-                System.out.println("Dépôt effectué avec succés.");
-            } else {
-                System.out.println("Erreur lors du dépôt.");
-            }
-        }
-    }
 
 }

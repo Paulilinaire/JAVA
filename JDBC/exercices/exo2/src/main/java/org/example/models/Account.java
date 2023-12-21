@@ -25,13 +25,22 @@ public class Account {
     public Account() {
     }
 
-    public void withdrawl(double amount) {
-        if (amount <= balance) {
-            this.balance -= amount;
-            operations.add(new Operation(amount, OperationStatus.WITHDRAWL));
-        } else {
-            System.out.println("Solde insuffisant.");
+    public boolean deposit(Operation operation){
+        if (operation.getAmount() < 0) {
+            operations.add(operation);
+            balance += operation.getAmount();
+            return true;
         }
+        return false;
+    }
+
+    public boolean withdrawl(Operation operation) {
+       if (operation.getAmount() > 0 && getBalance() >= operation.getAmount()*-1) {
+           operations.add(operation);
+           balance -= operation.getAmount();
+           return true;
+       }
+        return false;
     }
 
     public void showBalanceAndOperations() {

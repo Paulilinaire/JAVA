@@ -12,7 +12,6 @@ import org.example.utils.DatabaseManager;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class BankService {
@@ -61,31 +60,31 @@ public class BankService {
         }
     }
 
-    public void deposit(double amount) {
-        Account account = new Account();
-        account.setBalance(amount);
-        account.getOperations().add(new Operation(amount, OperationStatus.DEPOSIT));
-    }
-
-    public void displayAllClients() {
+    public Account getAccount(int clientId) {
         try {
-            List<Client> clients = clientDAO.getAll();
-            System.out.println("Liste des clients:");
-            for (Client client : clients) {
-                System.out.println(client);
+            // Retrieve the client by ID
+            Client client = clientDAO.get(clientId);
+
+            if (client != null) {
+                // Retrieve the account for the client
+                return accountDAO.get(clientId);
+            } else {
+                System.out.println("Pas de client trouvé avec l'id : " + clientId);
+                return null;
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
-    public List<Account> getAllAccounts(){
-        try {
-            return accountDAO.getAll();
-        }catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+    public void deposit(double amount) {
+        Account account = new Account();
+        account.setBalance(amount);
+        account.getOperations().add(new Operation(amount, OperationStatus.DEPOSIT));
     }
+
+
+
 
     public List<Client> getAllClients(){
         try {

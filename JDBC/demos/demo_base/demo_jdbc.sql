@@ -8,5 +8,6 @@ first_name VARCHAR(150),
 last_name VARCHAR(150)
 );
 
--- DROP TABLE person;
+-- DROP TABLE person;
 
+SELECT * FROM person;
